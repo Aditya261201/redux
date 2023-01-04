@@ -1,0 +1,2 @@
+// here we have given the access of actionCreators from the state directly... otherwise we have to take the access from state -> actionCreators -> index
+export * as actionCreators from "./action-creators/index"
