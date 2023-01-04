@@ -1,8 +1,13 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
+
 
 const Navbar = () => {
+    // accessed amount state from redux-store by using useSelector hook(we can select any state we want to use with the help of this hook)
+    const amount = useSelector(state => state.amount)
+
     return (
-        <div>
+        <div> 
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">State Bank of Aadi</a>
@@ -19,7 +24,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <div>
-                            <button disabled={true} className="btn btn-primary">Your Balance : 100000</button>
+                            <button disabled={true} className="btn btn-primary">Your Balance : {amount}</button>
                         </div>
                     </div>
                 </div>

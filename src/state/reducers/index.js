@@ -1,6 +1,6 @@
 // if we have more than one reducers then we can collect them at one place and export all at once.
 
-import {combineReducers} from 'react'
+import {combineReducers} from 'redux'
 import amountReducer from './amountReducer'
 
 
